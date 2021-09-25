@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="en" content="utf8">
+        <title>Sample HTML</title>
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="login.js"></script>
+    </head>
+    <body onload="initialSetup()">
+        <div class="wrapper">
+            <div class="container">
+                <center><br><br>
+                    <div id="loginPage">
+                        <h1>Login Page</h1>
+                        <table>
+                            <tr>
+                                <td colspan="2"><input type="text" id="oldUser" placeholder="User Name"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="password" id="oldPass" placeholder="Password"></td>
+                            </tr>
+                            <tr>
+                                <td><button onclick="login()">Log In</button></td>
+                                <td><button onclick="signupSetup()">Sign Up</button></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <input type="checkbox" class="checkbox" onclick="showPassword()">Show Password
+                    </div>
+                    <div id="signupPage">
+                        <h1>Create new account</h1>
+                        <table>
+                            <tr>
+                                <td colspan="2"><input type="text" id="newUser" placeholder="User Name"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="password" id="newPass" placeholder="Password"></td>
+                            </tr>
+                            <tr>
+                                <td><button onclick="signup()" >Create</button></td>
+                                <td><button onclick="initialSetup()">Log In</button></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <input type="checkbox" class="checkbox" onclick="showPassword()">Show Password
+                    </div>
+                    <div id="homePage">
+                        <h1>Welcome to homepage</h1>
+                        <h3>Have a nice day</h3>
+                    </div><br><br>
+                    <div id="result"></div>
+                </center>
+            </div>
+        </div>
+    </body>
+</html>

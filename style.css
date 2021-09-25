@@ -1,0 +1,48 @@
+body {
+    color: navy;
+}
+td {
+    align-items: center;
+}
+input {
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: #00008070;
+  width: 200px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  transition: 0.25s;
+  font-weight: 300;
+}
+input:hover {
+  background-color: #00008060;
+}
+input:focus {
+  background-color: white;
+  color: #3b3b3b;
+}
+body ::-webkit-input-placeholder {
+    color: white;
+}
+button {
+  outline: 0;
+  background-color: #0081;
+  border: 0;
+  padding: 10px 15px;
+  color: navy;
+  border-radius: 3px;
+  width: 110px;
+  cursor: pointer;
+  font-size: 18px;
+}
+button:hover {
+  background-color: #f7f5f9;
+}
+.checkbox {
+    width: 30px;
+    margin: auto;
+}
